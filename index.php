@@ -27,12 +27,9 @@ if ($method == "POST"){
             break;
     }
 
-    
-
-    $agent->reply('Hi, how can I help?');
-    header('Content-type: application/json');
-    echo json_encode($agent->render());
-
+    $response = new \stdClass();
+    $response->fullfillmentText = $speech;
+    echo json_encode($response);
 
 }else{
     echo "Method not allowed";
