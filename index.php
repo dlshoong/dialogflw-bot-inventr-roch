@@ -1,6 +1,6 @@
 <?php
 
-$method = $_SERVER['REQUEST_METHOD']
+$method = $_SERVER['REQUEST_METHOD'];
 
 // Process only when method is post
 if ($method == "POST"){
@@ -14,11 +14,11 @@ if ($method == "POST"){
             $speech = "Hi, Nice to meet you :)";
             break;
 
-        case 'bye'
+        case 'bye':
          $speech = "Bye Seng Hoong :)" ;
          break;
         
-        case "Rivotril"
+        case "Rivotril":
             $speech = "There are 10.";
         break;
 
