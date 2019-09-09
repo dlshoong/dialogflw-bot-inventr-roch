@@ -33,6 +33,10 @@ if ($method == "POST"){
     $response->source = "webhook";
     echo json_encode($response);
 
+    $agent->reply('Hi, how can I help?');
+    header('Content-type: application/json');
+    echo json_encode($agent->render());
+
 
 }else{
     echo "Method not allowed";
