@@ -27,11 +27,7 @@ if ($method == "POST"){
             break;
     }
 
-    $response = new \stdClass();
-    $response->fullfillmentText = $speech;
-    $response->fulfillmentMessages = $speech;
-    $response->source = "webhook";
-    echo json_encode($response);
+    
 
     $agent->reply('Hi, how can I help?');
     header('Content-type: application/json');
