@@ -28,7 +28,7 @@ if ($method == "POST"){
     }
 
     $agent->reply($speech);
-    echo json_encode($agent->render());
+    echo json_encode($agent);
 
     $response = new \stdClass();
     $response->speech = $speech;
