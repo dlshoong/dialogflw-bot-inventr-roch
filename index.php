@@ -28,6 +28,7 @@ if ($method == "POST"){
     }
 
     $response = new \stdClass();
+    $response->text = $speech;
     $response->speech = $speech;
     $response->displayText = $speech;
     $response->source = "webhook";
