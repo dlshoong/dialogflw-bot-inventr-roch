@@ -3,7 +3,7 @@
 $method = $_SERVER['REQUEST_METHOD']
 
 // Process only when method is post
-if($method == "POST"){
+if ($method == "POST"){
     $requestBody = file_get_contents('php://input');
     $json = json_decode($requestBody);
 
@@ -15,7 +15,7 @@ if($method == "POST"){
             break;
 
         case 'bye'
-         $speech = "Bye Seng Hoong :)"   
+         $speech = "Bye Seng Hoong :)" ;
          break;
         
         case "Rivotril"
