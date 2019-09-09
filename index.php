@@ -28,7 +28,6 @@ if ($method == "POST"){
     }
 
     $agent->reply($speech);
-    header('Content-type: application/json');
     echo json_encode($agent->render());
 
     $response = new \stdClass();
